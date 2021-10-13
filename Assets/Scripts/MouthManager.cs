@@ -10,7 +10,7 @@ public class MouthManager : MonoBehaviour
     void Start()
     {
         arFace.updated += (arFaceUpdatedEventArgs) => {
-            infoText.text = arFaceUpdatedEventArgs.face.vertices[12].ToString() + " ... " +arFaceUpdatedEventArgs.face.vertices[14].ToString();
+            infoText.text = arFaceUpdatedEventArgs.face.vertices[13].ToString() + " ... " +arFaceUpdatedEventArgs.face.vertices[14].ToString();
         };
     }
 }
