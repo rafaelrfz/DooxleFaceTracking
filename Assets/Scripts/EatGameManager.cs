@@ -7,7 +7,7 @@ public class EatGameManager : MonoBehaviour
 {
     [SerializeField] private List<Transform> creationPoints;
     [SerializeField] private List<GameObject> foodPool;
-    [SerializeField] private Text textScore, textTime;
+    [SerializeField] private Text textScore, textTime, textDebug;
     [SerializeField] private Button buttonRestartGame;
     [SerializeField] private int score, time, startTime = 60;
 
@@ -42,6 +42,7 @@ public class EatGameManager : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
         GameObject food = foodPool[Random.Range(0, foodPool.Count)];
         food.transform.position = creationPoints[Random.Range(0, creationPoints.Count)].position;
+        //textDebug.text = "posicion"+food.transform.position;
         //De pronto toca tambien la rotacion
         food.SetActive(true);
         Time--;
