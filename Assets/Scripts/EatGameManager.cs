@@ -41,10 +41,14 @@ public class EatGameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(1.0f);
         GameObject food = foodPool[Random.Range(0, foodPool.Count)];
-        food.transform.position = creationPoints[Random.Range(0, creationPoints.Count)].position;
-        //textDebug.text = "posicion"+food.transform.position;
-        //De pronto toca tambien la rotacion
-        food.SetActive(true);
+        while (!food.activeSelf)
+        {
+            food.transform.position = creationPoints[Random.Range(0, creationPoints.Count)].position;
+            //De pronto toca tambien la rotacion
+            food.SetActive(true);
+            //Debug.Log("no esta activo pero ahora sí");
+        }
+        
         Time--;
 
         if (Time.Equals(0))
@@ -57,5 +61,8 @@ public class EatGameManager : MonoBehaviour
         {
             StartCoroutine(WaitToPositionFood());
         }
+    }
+    void IsActive() { 
+        
     }
 }
