@@ -6,7 +6,7 @@ public class MouthManager : MonoBehaviour
 {
     [SerializeField] private ARFace arFace;
     [SerializeField] private Text infoText, infoTextFood;
-    [SerializeField] private GameObject food = null, particles;
+    [SerializeField] private GameObject food = null, particles, sphere;
     [SerializeField] private EatGameManager eatGameManager;
     [SerializeField] private AudioSource sfx;
 
@@ -15,8 +15,12 @@ public class MouthManager : MonoBehaviour
         eatGameManager = FindObjectOfType<EatGameManager>();
 
         arFace.updated += (arFaceUpdatedEventArgs) => {
-            infoText.text = arFaceUpdatedEventArgs.face.vertices[14].y < -0.05f ? "boca abierta": "boca cerrada";
-            infoTextFood.text = food == null ? "no hay comida": "hay comida";
+            //infoText.text = arFaceUpdatedEventArgs.face.vertices[14].y < -0.05f ? "boca abierta": "boca cerrada";
+            //infoTextFood.text = food == null ? "no hay comida": "hay comida";
+            Vector3 lPos = arFaceUpdatedEventArgs.face.vertices[14];
+            //Vector3 wPos = transform.worldToLocalMatrix * new Vector3(lPos.x, lPos.y, transform.localPosition.z);
+            sphere.transform.localPosition = lPos;
+            infoText.text = "esfera: " + sphere.transform.localPosition;
 
             if (arFaceUpdatedEventArgs.face.vertices[14].y < -0.05f && food != null)//Abrió la boca y tiene comida??
             {
@@ -28,6 +32,7 @@ public class MouthManager : MonoBehaviour
                 food = null;
             }
         };
+
     }
 
     private void OnTriggerEnter(Collider other)
