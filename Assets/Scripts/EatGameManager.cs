@@ -8,9 +8,9 @@ public class EatGameManager : MonoBehaviour
 {
     [SerializeField] private List<Transform> creationPoints;
     [SerializeField] private List<GameObject> foodPool;
-    [SerializeField] private Text textScore, textTime, textDebug;
+    [SerializeField] private Text textScore, textTime, textFall;
     [SerializeField] private Button buttonRestartGame;
-    [SerializeField] private int score, time, startTime = 60;
+    [SerializeField] private int score, time, fall, startTime = 60;
 
     public int Score { get => score; 
         set { 
@@ -24,6 +24,14 @@ public class EatGameManager : MonoBehaviour
             textTime.text = "TIEMPO: " + time.ToString();
         } 
     }
+    public int Fall{
+        get => fall;
+        set
+        {
+            fall = value;
+            textFall.text = "CAIDAS: " + fall.ToString();
+        }
+    }
 
     private void Start()
     {
@@ -34,6 +42,7 @@ public class EatGameManager : MonoBehaviour
     {
         buttonRestartGame.interactable = false;
         Score = 0;
+        Fall = 0;
         Time = startTime;
         StartCoroutine(WaitToPositionFood());
     }
