@@ -38,10 +38,16 @@ public class MouthManagerSphere : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
 	{
-        if (other.CompareTag("Sphere")) {
-            eatGameManager.Fall++;
-            sphere.transform.localPosition = sphereVerticePosition;
-            audioFall.Play();
-        }
+        if (other.CompareTag("Sphere"))
+		{
+			NewMethod();
+		}
+	}
+
+	private void NewMethod()
+	{
+		eatGameManager.Fall++;
+		sphere.transform.localPosition = sphereVerticePosition;
+		audioFall.Play();
 	}
 }

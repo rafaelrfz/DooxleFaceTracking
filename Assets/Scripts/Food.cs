@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Food : MonoBehaviour
 {
+    [SerializeField] private float waitToDisable = 4.0f;
     void OnEnable()
     {
         StartCoroutine(WaitToInactive());
@@ -10,7 +11,7 @@ public class Food : MonoBehaviour
 
     IEnumerator WaitToInactive()
     {
-        yield return new WaitForSeconds(4.0f);
+        yield return new WaitForSeconds(waitToDisable);
         //De pronto toca quitar fuerza o impulso
         gameObject.SetActive(false);
     }
