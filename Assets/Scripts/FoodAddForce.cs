@@ -40,6 +40,7 @@ public class FoodAddForce : MonoBehaviour
 	{
         if (other.CompareTag("WallSumScore"))
         {
+            other.GetComponent<AudioSource>().Play();
             asteroidGameManager.Score++;
             gameObject.SetActive(false);
         }

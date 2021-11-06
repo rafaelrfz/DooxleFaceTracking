@@ -678,7 +678,7 @@ Rigidbody:
   m_GameObject: {fileID: 94361066}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 45
+  m_Drag: 38
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -773,7 +773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52817b564c9beb844900b78c4db16dac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitToDisable: 21
+  waitToDisable: 10
 --- !u!1 &115473137
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,7 +904,7 @@ Rigidbody:
   m_GameObject: {fileID: 125977527}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 45
+  m_Drag: 38
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -999,7 +999,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52817b564c9beb844900b78c4db16dac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitToDisable: 21
+  waitToDisable: 10
 --- !u!1 &141581926
 GameObject:
   m_ObjectHideFlags: 0
@@ -1106,7 +1106,7 @@ Rigidbody:
   m_GameObject: {fileID: 141581926}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 45
+  m_Drag: 38
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1125,7 +1125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52817b564c9beb844900b78c4db16dac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitToDisable: 21
+  waitToDisable: 10
 --- !u!1 &197581334
 GameObject:
   m_ObjectHideFlags: 0
@@ -1156,7 +1156,7 @@ Rigidbody:
   m_GameObject: {fileID: 197581334}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 45
+  m_Drag: 38
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1251,7 +1251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52817b564c9beb844900b78c4db16dac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitToDisable: 21
+  waitToDisable: 10
 --- !u!1 &208747964
 GameObject:
   m_ObjectHideFlags: 0
@@ -1319,7 +1319,7 @@ Rigidbody:
   m_GameObject: {fileID: 219420211}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 45
+  m_Drag: 38
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1414,7 +1414,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52817b564c9beb844900b78c4db16dac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitToDisable: 21
+  waitToDisable: 10
+--- !u!1 &271631492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 271631494}
+  - component: {fileID: 271631493}
+  m_Layer: 0
+  m_Name: AudioListener
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &271631493
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271631492}
+  m_Enabled: 1
+--- !u!4 &271631494
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271631492}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &327391883
 GameObject:
   m_ObjectHideFlags: 0
@@ -1543,7 +1582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52817b564c9beb844900b78c4db16dac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitToDisable: 21
+  waitToDisable: 10
 --- !u!54 &329286706
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1553,7 +1592,7 @@ Rigidbody:
   m_GameObject: {fileID: 329286704}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 45
+  m_Drag: 38
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1669,7 +1708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52817b564c9beb844900b78c4db16dac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitToDisable: 21
+  waitToDisable: 10
 --- !u!54 &413158990
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1679,7 +1718,7 @@ Rigidbody:
   m_GameObject: {fileID: 413158988}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 45
+  m_Drag: 38
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1880,7 +1919,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454386829}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0.227, z: 0.35}
+  m_LocalPosition: {x: 0, y: 0.24, z: 0.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 517103875}
@@ -1933,7 +1972,8 @@ MonoBehaviour:
   score: 0
   time: 0
   startTime: 60
-  asteroidWait: 3
+  asteroidWaitMin: 3
+  asteroidWaitMax: 3
 --- !u!1 &517103874
 GameObject:
   m_ObjectHideFlags: 0
@@ -2190,7 +2230,7 @@ Rigidbody:
   m_GameObject: {fileID: 603083564}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 45
+  m_Drag: 38
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -2285,7 +2325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52817b564c9beb844900b78c4db16dac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitToDisable: 21
+  waitToDisable: 10
 --- !u!1 &636830592
 GameObject:
   m_ObjectHideFlags: 0
@@ -2565,7 +2605,7 @@ Rigidbody:
   m_GameObject: {fileID: 680152229}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 45
+  m_Drag: 38
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -2660,7 +2700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52817b564c9beb844900b78c4db16dac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitToDisable: 21
+  waitToDisable: 10
 --- !u!1 &688871960
 GameObject:
   m_ObjectHideFlags: 0
@@ -7988,7 +8028,7 @@ Rigidbody:
   m_GameObject: {fileID: 880168684}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 45
+  m_Drag: 38
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -8083,7 +8123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52817b564c9beb844900b78c4db16dac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitToDisable: 21
+  waitToDisable: 10
 --- !u!1 &939912738
 GameObject:
   m_ObjectHideFlags: 0
@@ -8145,7 +8185,7 @@ Rigidbody:
   m_GameObject: {fileID: 948513389}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 45
+  m_Drag: 38
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -8240,7 +8280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52817b564c9beb844900b78c4db16dac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitToDisable: 21
+  waitToDisable: 10
 --- !u!1 &953478360
 GameObject:
   m_ObjectHideFlags: 0
@@ -8271,7 +8311,7 @@ Rigidbody:
   m_GameObject: {fileID: 953478360}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 45
+  m_Drag: 38
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -8366,7 +8406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52817b564c9beb844900b78c4db16dac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitToDisable: 21
+  waitToDisable: 10
 --- !u!1 &1003185566
 GameObject:
   m_ObjectHideFlags: 0
@@ -8400,7 +8440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52817b564c9beb844900b78c4db16dac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitToDisable: 21
+  waitToDisable: 10
 --- !u!54 &1003185568
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8410,7 +8450,7 @@ Rigidbody:
   m_GameObject: {fileID: 1003185566}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 45
+  m_Drag: 38
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -9094,7 +9134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52817b564c9beb844900b78c4db16dac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitToDisable: 21
+  waitToDisable: 10
 --- !u!54 &1181955556
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9104,7 +9144,7 @@ Rigidbody:
   m_GameObject: {fileID: 1181955554}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 45
+  m_Drag: 38
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -9784,7 +9824,7 @@ Rigidbody:
   m_GameObject: {fileID: 1265492792}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 45
+  m_Drag: 38
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -9879,7 +9919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52817b564c9beb844900b78c4db16dac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitToDisable: 21
+  waitToDisable: 10
 --- !u!1 &1354141925
 GameObject:
   m_ObjectHideFlags: 0
@@ -10036,7 +10076,7 @@ Rigidbody:
   m_GameObject: {fileID: 1390278779}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 45
+  m_Drag: 38
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -10131,7 +10171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52817b564c9beb844900b78c4db16dac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitToDisable: 21
+  waitToDisable: 10
 --- !u!1 &1439140318
 GameObject:
   m_ObjectHideFlags: 0
@@ -10269,7 +10309,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 93f851e35e231544a9774e0725726aca, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3debbfe0bfb49e546a7b62beb77ac330, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -10798,7 +10838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52817b564c9beb844900b78c4db16dac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitToDisable: 21
+  waitToDisable: 10
 --- !u!54 &1614810812
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10808,7 +10848,7 @@ Rigidbody:
   m_GameObject: {fileID: 1614810810}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 45
+  m_Drag: 38
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -11017,7 +11057,7 @@ Rigidbody:
   m_GameObject: {fileID: 1687908928}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 45
+  m_Drag: 38
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -11112,7 +11152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52817b564c9beb844900b78c4db16dac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitToDisable: 21
+  waitToDisable: 10
 --- !u!1 &1861514699
 GameObject:
   m_ObjectHideFlags: 0
@@ -11143,7 +11183,7 @@ Rigidbody:
   m_GameObject: {fileID: 1861514699}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 45
+  m_Drag: 38
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -11238,7 +11278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52817b564c9beb844900b78c4db16dac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitToDisable: 21
+  waitToDisable: 10
 --- !u!1 &1973424599
 GameObject:
   m_ObjectHideFlags: 0
@@ -11894,7 +11934,7 @@ Rigidbody:
   m_GameObject: {fileID: 2119788863}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 45
+  m_Drag: 38
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -11989,7 +12029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52817b564c9beb844900b78c4db16dac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitToDisable: 21
+  waitToDisable: 10
 --- !u!64 &3923337810182147680
 MeshCollider:
   m_ObjectHideFlags: 0
